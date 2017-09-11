@@ -61,7 +61,7 @@ gulp.task('build', [
 
 ]);
 
-gulp.task('min', ['clean'], () => {
+gulp.task('dev', ['clean'], () => {
   runSequence('build');
 })
 
