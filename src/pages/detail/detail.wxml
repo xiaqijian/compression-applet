@@ -1,0 +1,49 @@
+<!--detail.wxml-->
+<view class="detail_wrapper">
+  <view class="detail_main">
+    <image src="{{detail_key.shop_image}}" class="shop_img"></image>
+    <view class="main_right">
+      <text class="detail_name">{{detail_key.name}}</text>
+      <text class="detail_address">{{detail_key.address}}</text>
+      <view class="mili_box">
+        <span class="fan">返</span><text class="detail_mili">{{detail_key.mili}}</text>
+      </view>
+      <view class="quan_box" wx:if="{{detail_key.quan}}">
+        <span class="quan">券</span><text class="quan_have">{{detail_key.quan}}</text>
+      </view>
+      <text wx:else class="quan_none">暂无优惠信息</text>
+    </view>
+  </view>
+  <view class="business_environment">
+      <view class="env_header">商家环境</view>
+      <scroll-view scroll-x="true" style="white-space: nowrap; display: flex;padding:20rpx;" >
+      <!--  display: inline-block--> 
+      <view class="env_img_item" wx:for="{{detail_key.environment_banner}}">
+        <image data-src="{{item.ev_img}}" src="{{item.ev_img}}" bindtap="previewImage" ></image>
+      </view>
+      </scroll-view>
+ </view>
+ 
+ <view class="tell_wrapper" bindtap="calling">
+    <image src="../../image/tell_2.png" class="tell_1"></image>
+    <text>{{detail_key.tell_number}}</text>
+    <image src="../../image/tell.png"  class="tell_2"></image>
+ </view>
+ <view class="tell_wrapper" bindtap="openLocation">
+    <image src="../../image/address_@_2.png" class="tell_1"></image>
+    <text>{{detail_key.address}}</text>
+    <image src="../../image/adress_@_1.png"  class="tell_2"></image>
+ </view>
+ 
+ <view class="recommend_wrapper">
+    <view class="re_header">推荐商家</view>
+    <view class="recommend_box">
+    <navigator url="./detail?detail_id={{rec_shop_1.detail_id}}">
+      <image class="recommend_item re_co_1" src="{{rec_shop_1.shop_image}}"></image>
+    </navigator>
+    <navigator url="./detail?detail_id={{rec_shop_2.detail_id}}">
+       <image class="recommend_item" src="{{rec_shop_2.shop_image}}"></image>
+    </navigator>
+    </view>
+ </view>
+</view>

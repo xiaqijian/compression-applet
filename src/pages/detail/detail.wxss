@@ -1,0 +1,159 @@
+/* detail.wxss */
+page{
+  background-color: #eee;
+}
+.detail_wrapper{
+  width:100%;
+  overflow:hidden;
+}
+.detail_main{
+  width:100%;
+  overflow: hidden;
+  padding:20rpx;
+  background-color:#fff;
+  margin-bottom:20rpx;
+}
+.shop_img{
+  width:200rpx;
+  height:200rpx;
+  float:left;
+  margin-right:20rpx;
+}
+.main_right{
+  float:left;
+  width:530rpx;
+}
+.main_right text{
+  display:block;
+  font-size:28rpx;
+  color:#222;
+  
+}
+.detail_name{
+  width:530rpx;
+  font-size:30rpx;
+  margin-bottom:15rpx;
+}
+.detail_address{
+  width:530rpx;
+  margin-bottom:20rpx;
+}
+.mili_box{
+  margin-bottom:20rpx;
+}
+.quan_box{
+  margin-bottom:20rpx;
+}
+.fan{
+  float:left;
+  background-color:#dd2727;
+  color:#fff;
+  font-size:26rpx;
+  padding:5rpx;
+  margin-right:10rpx;
+}
+.quan{
+  float:left;
+  background-color:#F18D00;
+  color:#fff;
+  font-size:26rpx;
+  padding:5rpx;
+  margin-right:10rpx;
+}
+.business_environment{
+  width:100%;
+  overflow:hidden;
+  background-color:#fff;
+  margin-bottom:20rpx;
+}
+.env_header{
+  font-size:30rpx;
+  padding:20rpx;
+  border-bottom:1rpx solid #ccc;
+  color:#222;
+  margin-bottom:10rpx;
+}
+.env_img_item{
+  width: 270rpx; 
+  height: 175rpx; 
+  overflow:hidden;
+  display: inline-block;
+  margin-right:20rpx;
+}
+.env_img_item image{
+   width: 270rpx; 
+   height: 175rpx; 
+
+}
+
+.tell_wrapper{
+  width:100%;
+  overflow: hidden;
+  background-color:#fff;
+  padding:20rpx;
+  border-bottom:1rpx solid #ccc;
+}
+.tell_wrapper .tell_1{
+  width:30rpx;
+  height:30rpx;
+  float:left;
+  margin-top:2rpx;
+  margin-right:15rpx;
+} 
+.tell_wrapper .tell_2{
+  width:42rpx;
+  height:42rpx;
+  float:right;
+  margin-right:30rpx;
+  margin-top:-11rpx;
+} 
+.tell_wrapper text{
+  text-align:center;
+  float:left;
+  color:#F38539;
+  font-size:26rpx;
+}
+.comment_wrapper{
+  width:100%;
+  overflow: hidden;
+  background-color:#fff;
+  padding:20rpx;
+  border-bottom:1rpx solid #ccc;
+  font-size:26rpx;
+  color:#999;
+}
+.comment_wrapper .more{
+  width:44rpx;
+  height:44rpx;
+  float:right;
+  margin-right:30rpx;
+  margin-top:-10rpx;
+}
+.light_font{
+  color:#F38539;
+}
+.re_header{
+  padding:20rpx;
+  font-size:30rpx;
+}
+.recommend_wrapper{
+ width:100%;
+ overflow: hidden;
+ background-color:#fff;
+ padding-bottom:40rpx;
+}
+.recommend_box{
+  width:690rpx;
+  margin:0 auto;
+
+}
+.re_co_1{
+  margin-right:50rpx;
+}
+.recommend_item{
+  width:321rpx;
+  height:321rpx;
+  float:left;
+  border-radius:15rpx;
+
+}

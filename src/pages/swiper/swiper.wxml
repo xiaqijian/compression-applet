@@ -1,0 +1,10 @@
+<view class="lunbo_box">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block>
+      <swiper-item wx:for="{{lunbo_img}}" wx:key="lunbo_img">
+        <image src="{{item.luboimg}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+    </swiper>
+    <view class="location">您当前位置：{{addressdata}}</view>
+</view>
